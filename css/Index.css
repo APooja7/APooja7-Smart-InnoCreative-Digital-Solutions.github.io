@@ -1,0 +1,773 @@
+*{box-sizing: border-box; margin: 0 0; padding: 0; font-family: 'Poppins', sans-serif; ;}
+
+h2{font-weight: bold;
+    color: #21367f;
+    list-style: underline;
+}
+
+.linestyle{
+    color: #21367f;
+    display: inline-block;
+    position: relative;
+}
+
+.linestyle::after{
+    content:'';
+    height: 5px;
+    width:30%;
+    background:#cdab00;
+    left: calc(40%);
+    position: absolute;
+    bottom: 5px;
+}
+
+
+.box{
+    height: 6px; background-image: linear-gradient(#21367f,#0296c8);
+    width: 100%;
+}
+
+ul{list-style: none;}
+
+.input-group-text{
+    border: none;
+    background-image: linear-gradient(#21367f,#0296c8);
+}
+
+.flx-box{display: flex; justify-content: space-between;}
+
+.flx-box-items{display: flex; align-items: center; justify-content: center;}
+
+/* navbar starts */
+
+.navbar-dark{
+    background-image: linear-gradient(#cdab00,#fbf421);
+    padding-top: 0%;
+    padding-bottom: 0%;
+        }
+
+    .nav-item{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .navbar{
+        color: #21367f;
+    }
+
+
+    .active{
+        background-image: linear-gradient(#21367f,#0296c8);
+    }
+    /* navbar ends */
+
+    /* plan start */
+
+   .planbox{
+    border: #ecece6;
+    border-radius: 1rem;
+    color: #555555;
+    border-style: groove;
+}
+    
+
+
+.planbox:hover{
+    border:none;
+    border-top-width: 6px;
+    border-top-style:outset;
+    border-color: #21367f;
+    color:#21367f;
+}
+
+.image {
+    position: relative;
+    width: 300px;
+}
+
+
+
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.25s;
+    border-radius: 2%;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background-image: linear-gradient(#21367f,#0296c8);
+}
+
+.image__overlay > * {
+    transform: translateY(70px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button{
+    background-color: none;
+    align-items: center;
+    border-radius: 5px;
+}
+
+button:hover{
+    border: none;
+    background-color: #21367f;
+    align-items: center;
+    color: white;
+    border-color: none;
+    border-radius: 5px;
+}
+
+span{
+    font-size: 2.5rem;
+}
+
+.seoformstyle{
+    background-image: url("../Images/slices/seo-form-bg.jpg");background-size: cover; width: 100%;
+    color: white;
+}
+
+
+
+/* what our client says start*/
+
+.bannerbox{
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 5px;
+    color: grey;
+}
+
+.bannerbox:hover{
+    background-color: #caf0f8;
+}
+
+
+/* what our client says ends*/
+
+
+
+/* footer start */
+.footerstyle{
+    background-image: linear-gradient(#21367f,#0296c8);
+    margin: 0px;
+    padding: 40px;
+    color: white;
+    box-shadow: 2px 2px 3px rgb(138, 134, 134);
+}
+
+.footerstyle a{
+    color: #fbf421;
+}
+
+.footer-box{
+    height: 6px; background-image: linear-gradient(#cdab00,#fbf421);
+}
+/* footer end */
+
+
+/* SERVICES PAGE STARTS */
+
+.banner-text{
+    color: white;
+    font-weight: 550;
+    font-size: 80px;
+}
+
+.banner-text1{
+    color:white;
+    font-weight: 500;
+    font-size: 60px;
+    border: double;
+    border-color: white;
+}
+
+.service-box1
+{
+    border: #b61a5a;
+    background-color: #f3dbe6;
+    color: #b61a5a;
+    border-radius: 8px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+
+.service-box2
+{
+    border: #479509;
+    background-color: #eff6e7;
+    color: #479509;
+    border-radius: 8px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.service-box3
+{
+    border: #cb5e12;
+    background-color: #f6e0d1;
+    color: #cb5e12;
+    border-radius: 8px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.service-box4
+{
+    border: #671492;
+    background-color: #f1e9f8;
+    color: #671492;
+    border-radius: 8px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+/* page starts */
+.seopagefont-1{
+    color:#b61a5a;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.seopagefont-2{
+    color:#479509;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.seopagefont-3{
+    color: #cb5e12;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.seopagefont-4{
+    color: #671492;
+    font-weight: bold;
+    font-size: 40px;
+}
+/* page ends */
+
+.pageheadingfontstyle{
+    color: #555555;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+p{
+    line-height: 35px;
+}
+
+
+.parallelogram-1 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #a510b1;
+    border-style: solid;
+    color: #a510b1;
+}
+
+.imgzoom{
+    transition: transform .2s;
+}
+
+.imgzoom:hover{
+    transform: scale(1.2);
+}
+
+.parallelogram-2 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #1085ae;
+    border-style: solid;
+    color: #1085ae;
+}
+
+.parallelogram-3 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #b6ad13;
+    border-style: solid;
+    color: #b6ad13;
+}
+
+.parallelogram-4 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #e1520a;
+    border-style: solid;
+    color: #e1520a;
+}
+
+.parallelogram-5 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #4F10B1;
+    border-style: solid;
+    color: #4F10B1;
+}
+
+.parallelogram-6 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #D71275;
+    border-style: solid;
+    color: #D71275;
+}
+
+.parallelogram-7 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #128608;
+    border-style: solid;
+    color: #128608;
+}
+
+.parallelogram-8 {
+	width: 200px;
+	height: 200px;
+	background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 10px;
+    border: #0E989F;
+    border-style: solid;
+    color: #0E989F;
+}
+
+/* SERVICES PAGE ENDS */
+
+.bannerimage{
+    background-image: url("../Images/servicesimages/services-bg.png"); max-height: 88%; background-size: cover;
+}
+
+/* HOW WE DO STARTS */
+.bannerstyle{
+    background-image: url("../Images/howwedoimages/howwedobanner.png"); max-height: 50%; background-size: cover;
+    color: white;
+}
+
+.imgpositon{
+    position: relative;
+    bottom: -50px;
+}
+
+.contentbox{
+    background-color: #efefef;
+}
+
+.contentcol:hover{
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    padding:-20%;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* HOW WE DO ENDS */
+
+/* CONTACT PAGE STARTS */
+
+.contactdetailsbgimage{
+    background-image: url("../images/contactimages/contact-bg.png"); max-height: 30%; background-size: cover;
+    color: white;
+}
+
+.btn-primary{
+    background-color: white;
+    color: #21367f;
+    border-color: #21367f;
+
+}
+
+.btn-primary:hover{
+    background-color: #21367f;
+}
+
+.imgposition{
+    position: relative;
+    bottom: 51.5%;
+}
+
+
+/* CONTACT PAGE ENDS */
+
+
+
+
+    /* Responsive classes starts */
+
+
+    @media screen and (min-width : 320px) and (max-width : 768px)
+/* for mobile screens */
+{
+        
+    .nonecls{
+        display: none;
+    }
+
+    .colsmspace{
+        padding-top: 10%;
+        
+    }
+
+    .colsm{
+        width: 90%;
+       float: left;
+          } 
+    
+          .smpadding{
+              padding-top: 10%;
+              padding-bottom: 10%;
+          }
+
+         
+    }
+
+
+
+
+@media screen and (min-width : 769px) and (max-width : 1023px)
+/* for tablets screens */
+{
+        
+    .noneclsmd{
+        display: none;
+    }
+
+    .colmd{
+        width: 50%;
+       float: left;
+          }
+          
+          .mdpadding{
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .logosize{
+            width: 10%;
+        }
+
+
+       
+}
+
+@media screen and (min-width : 1024px)
+/* for tablets screens */
+{
+        
+    .nonclslg{
+        display: none;
+    }
+
+    .logosize{
+        width: 10%;
+    }
+
+}
+
+/* why we are responsive starts */
+
+@media screen and (min-width : 320px) and (max-width : 370px)
+{
+
+.blankspaces{
+    background-color: white;
+    padding: 300%;
+}
+}
+
+@media screen and (min-width : 371px) and (max-width : 430px)
+{
+
+.blankspacesm{
+    background-color: white;
+    padding: 230%;
+}
+}
+
+@media screen and (min-width : 431px) and (max-width : 500px)
+{
+
+.blankspacem{
+    background-color: white;
+    padding: 170%;
+}
+}
+
+@media screen and (min-width : 501px) and (max-width : 580px)
+{
+
+.blankspacemd{
+    background-color: white;
+    padding: 100%;
+}
+}
+
+@media screen and (min-width : 581px) and (max-width : 700px)
+{
+
+.blankspacemdd{
+    background-color: white;
+    padding: 60%;
+}
+}
+
+@media screen and (min-width : 701px) and (max-width : 855px)
+{
+
+.blankspacemddd{
+    background-color: white;
+    padding: 50%;
+}
+}
+
+@media screen and (min-width : 856px) and (max-width : 1050px)
+{
+
+.blankspacelg{
+    background-color: white;
+    padding: 40%;
+}
+.imgblock{
+    display: none;
+}
+}
+
+
+
+/* chat box example */
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-image: linear-gradient(#21367f,#0296c8);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.full-chat-block {
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+
+.chat-container {
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon:hover {
+    opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}
